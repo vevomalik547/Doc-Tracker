@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
+import { PricingTable, PricingSlot, PricingDetail } from "react-pricing-table";
 
 const Pricing = () => {
 		  const handleLogout = () => {
@@ -42,6 +43,34 @@ const Pricing = () => {
 <br />
 <br />
 <br />
+<PricingTable highlightColor="#1976D2">
+      <PricingSlot buttonText="TRY IT FREE" title="FREE" priceText="$0/month">
+        <PricingDetail> 1 GB Free Storage Data </PricingDetail>
+        <PricingDetail> Allowed File formats: .pdf, .png & .css</PricingDetail>
+        <PricingDetail> Allows the owner to share files to another user</PricingDetail>
+      </PricingSlot>
+
+      <PricingSlot buttonText="Pay Now" title="Prime" priceText="$4/month">
+        <PricingDetail> 5 GB Storage Data </PricingDetail>
+        <PricingDetail> Allowed File formats: .pdf, .png, .jpg, .css & .zip</PricingDetail>
+        <PricingDetail> Allows the owner to share filesand the receiver to request permission of other files </PricingDetail>
+        <PricingDetail>
+          {" "}
+          Our entire library of Episodes, Documentaries and Movies
+        </PricingDetail>
+        <PricingDetail> </PricingDetail>
+      </PricingSlot>
+
+      <PricingSlot buttonText="Pay Now" title="VIP" priceText="$6/month">
+        <PricingDetail> 15 GB Storage Data </PricingDetail>
+        <PricingDetail> Allowed File formats: .pdf, .png, .css, .doc, .pkg, .iso, .bin, .svg, .xml & .zip, </PricingDetail>
+        <PricingDetail>
+          {" "}
+          Allows the owner to share filesand the receiver to request permission of other files
+        </PricingDetail>
+      </PricingSlot>
+    </PricingTable>
+
 <br />
 <br />
 <br />
