@@ -33,7 +33,7 @@ const Pricing = () => {
 				</Link>
 
 				<Link to="/">
-				<button className={styles.logout_btn} onClick={handleLogout}>
+				<button className={styles.logout_btn} onClick={handleLogout} >
 					Logout
 				</button>
 				</Link>
@@ -43,6 +43,8 @@ const Pricing = () => {
 <br />
 <br />
 <br />
+<h1>Ready to start with DocTracker?</h1>
+<h5>Choose the package that suits you from below</h5>
 <PricingTable highlightColor="#1976D2">
       <PricingSlot buttonText="TRY IT FREE" title="FREE" priceText="$0/month">
         <PricingDetail> 1 GB Free Storage Data </PricingDetail>
