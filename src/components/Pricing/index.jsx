@@ -22,7 +22,7 @@ const Pricing = () => {
 					</Link>
 
 				<button className={styles.header_btn} >
-				<a href="#features">Features</a>
+				<a href="/#features">Features</a>
 				</button>				
 				
 				<Link to="/Pricing">

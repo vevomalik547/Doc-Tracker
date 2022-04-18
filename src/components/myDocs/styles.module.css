@@ -118,45 +118,6 @@
   height: 40px;
 }
 
-.dms {
-  text-align: left;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-}
-
-.tbl1 {
-  background-color: #3a3a3a;
-  border-radius: 24px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #44a5c3;
-  width: 60%;
-  height: 250px;
-  padding: 2%;
-}
-
-.features {
-  background-color: #ffffff;
-  display: flex;
-  color: #3aa8ec;
-  flex-direction: column;
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-bottom: 5%;
-  justify-content: center;
-  border-radius: 25%;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-}
-
-.featuresIn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .card {
   background-color: whitesmoke;
   border-radius: 14px;
@@ -315,4 +276,50 @@
   padding-left: 2%;
   padding-right: 2%;
   justify-content: center;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+:root {
+    --body-bg: #f5f8ff;
+    --box-bg: #fff;
+    --input-bg: #f5f8ff;
+    --txt-color: #2f2d2f;
+    --txt-second-color: #ccc;
+    --border-color: #4267b2;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: var(--body-bg);
+    color: var(--txt-color);
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: var(--box-bg);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dropBox{
+  justify-content: center;
+  justify-items: center;
+  text-align: justify;
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }

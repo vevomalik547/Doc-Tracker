@@ -25,7 +25,10 @@ function App() {
 			<Route path="/Pricing" exact element={<Pricing />} />
 			<Route path="/myDocs" exact element={<MyDocs />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
+			
 		</Routes>
+
+		
 	);
 	
 }
