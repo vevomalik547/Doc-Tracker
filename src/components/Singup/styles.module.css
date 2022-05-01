@@ -9,7 +9,7 @@
 }
 
 .signup_form_container {
-  width: 900px;
+  width: 80%;
   height: 500px;
   display: flex;
   border-radius: 10px;
@@ -110,6 +110,7 @@
 .footer {
   display: flex;
   flex-direction: column;
+  text-align: center;
   background-color: rgb(43, 43, 43);
   color: white;
   border-top-left-radius: 25%;

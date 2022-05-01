@@ -151,25 +151,47 @@ const Main = () => {
             
         </section>
 
-
         <section className={styles.footer_info_center}>
         <a href='/'><img src="./Niftron_logo.png" height={75} width={200} alt="Logo" /></a>
         <br />
         <br />
-        <div className='icons' align="center">
+        <section className='icons' align="center">
         <br />
-        <a href='/'><img src="./instaicon.png" height={50} width={50} alt="insta" /></a>
-        <a href='https://github.com/Niftron'><img src="./giticon.png" height={50} width={50} alt="git" /></a>
-        <a href='/'><img src="./linkedinicon.png" height={50} width={50} alt="linkedIn" /></a>
+        <table>
+        <tr>
+            <td>
+              <a href='/'><img src="./instaicon.png" height={50} width={50} alt="insta" /></a></td>
+              <td>
+              <a href='https://github.com/Niftron'><img src="./giticon.png" height={50} width={50} alt="git" /></a></td>
+            <td>
+              <a href='/'><img src="./linkedinicon.png" height={50} width={50} alt="linkedIn" /></a></td>
+              <td></td>
+        </tr>
+        </table>
+         </section>
 
-         </div>
           <section className={styles.footer_info_terms}>
             <br />
-            <p><a href='/'>Info</a>  -  <a href='/'>Support </a>  -  <a href='/'>Marketting </a></p>
+            
+        <table>
+        <tr>
+            <td><a href='/'>Info</a></td>
+            <td>-</td>
+            <td><a href='/'>Support </a></td>
+              <td>-</td>
+            <td><a href='/'>Marketting </a></td>
+              <td></td>
+        </tr>
+        </table>
+            
           </section>
           <section className={styles.footer_info_email}>
             <br />
-           © 2022 Niftron
+            <table>
+        <tr>
+            <td>Powered by <a className={styles.footer_info_email} href='/'><ing src="./shortcutIcon.png" alt="logo" /></a></td>
+        </tr>
+        </table>
           </section>
         </section>
         <section className={styles.footer_info_right}>

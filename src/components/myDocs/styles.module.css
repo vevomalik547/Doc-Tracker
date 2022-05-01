@@ -3,7 +3,6 @@
 }
 
 .navbar {
-  display: flex;
   align-items: center;
   margin-top: 0px;
   display: flex;
@@ -24,28 +23,29 @@
 }
 
 .logout_btn {
-  display: flex;
   height: 40px;
-  width: 20%;
+  width: 30%;
   justify-content: center;
   align-items: center;
   margin-left: 5px;
-  background-color: rgb(175, 0, 0);
+  background-color: rgb(194, 29, 29);
   border-radius: 14px;
-  border-color: rgb(239, 239, 239);
-  color: inherit;
+  border-color: rgba(239, 239, 239, 0);
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .logout_btn:hover {
-  background-color: rgb(238, 56, 0);
+  background-color: rgb(245, 0, 0);
   border-radius: 14px;
-  border-color: rgb(82, 201, 248);
+  border-color: rgba(82, 201, 248, 0);
   color: rgb(255, 255, 255);
+  transform: translateX(20px);
   transition: 0.6s ease-in-out;
 }
+
 
 .header_btn {
   display: flex;
@@ -57,7 +57,7 @@
   margin-right: 5px;
   background-color: transparent;
   border-radius: 14px;
-  /*border-color: rgb(82, 201, 248);*/
+  border-color: rgba(82, 201, 248, 0);
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -75,65 +75,6 @@
 .header_btn a {
   color: white;
   text-decoration: none;
-}
-
-.homeTop {
-  display: flex;
-  flex-direction: row;
-}
-
-.home_item {
-  display: flex;
-  justify-content: center;
-  width: 45%;
-  margin-left: 30px;
-  text-align: left;
-}
-
-.home_item_top {
-  text-align: left;
-  font-size: 2.5rem;
-  display: block;
-  flex-direction: column;
-  font-weight: bold;
-}
-
-.content {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  text-align: justify;
-  color: black;
-  width: 100%;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.btn1 {
-  width: 50%;
-  background-color: rgb(2, 55, 73);
-  border-radius: 24px;
-  border: 10px;
-  border-color: crimson;
-  color: white;
-  height: 40px;
-}
-
-.card {
-  background-color: whitesmoke;
-  border-radius: 14px;
-  width: 250px;
-  height: 200px;
-  font-family: serif;
-  font-size: 15px;
-  text-align: center;
-  color: black;
-  box-shadow: 5px 4px 10px #505050;
-}
-
-.card:hover {
-  box-shadow: 5px 4px 10px #505050;
-  transform: scale(1.05);
-  transition: 0.2s ease-in-out;
 }
 
 .btn,
@@ -303,9 +244,10 @@ body {
 
 .box {
     background-color: var(--box-bg);
-    padding: 30px;
+    padding-left: 30px;
     border-radius: 20px;
     box-shadow: var(--box-shadow);
+    position: relative;
     align-items: center;
     text-align: center;
 }
@@ -316,6 +258,8 @@ body {
 }
 
 .dropBox{
+  padding-left: 35%;
+  padding-bottom: 5%;
   justify-content: center;
   justify-items: center;
   text-align: justify;

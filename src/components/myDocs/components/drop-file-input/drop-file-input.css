@@ -1,3 +1,4 @@
+
 .drop-file-input {
     position: relative;
     width: 400px;
@@ -36,23 +37,33 @@
 
 .drop-file-input__label img {
     width: 100px;
+    align-items: center;
 }
 
 .drop-file-preview {
+    text-align: left;
+    align-items: left;
     margin-top: 30px;
+    
+    align-items: center;
+    text-align: left;
 }
 
 .drop-file-preview p {
     font-weight: 500;
+    align-items: center;
 }
 
 .drop-file-preview__title {
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .drop-file-preview__item {
     position: relative;
     display: flex;
+    text-align: left;
+    align-items: center;
     margin-bottom: 10px;
     background-color: var(--input-bg);
     padding: 15px;
@@ -66,8 +77,9 @@
 
 .drop-file-preview__item__info {
     display: flex;
+    text-align: left;
+    align-items: left;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .drop-file-preview__item__del {
@@ -90,4 +102,17 @@
 
 .drop-file-preview__item:hover .drop-file-preview__item__del {
     opacity: 1;
+}
+
+.uploadbtn{
+    width: 20%;
+    height: 50px;
+    background-color: rgba(95, 124, 160, 0.235);
+    border: 0px;
+    border-radius: 24px;
+}
+
+.uploadbtn:hover{
+    background-color: rgba(3, 100, 211, 0.616);
+    transition: 0.6s ease-in-out;
 }

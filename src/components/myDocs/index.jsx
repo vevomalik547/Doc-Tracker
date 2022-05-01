@@ -8,8 +8,8 @@ const myDocs = () => {
     console.log(files);
 }
   const handleLogout = () => {
-		localStorage.removeItem("niftoken");
-		window.location.reload();
+      localStorage.removeItem("niftoken");
+      window.location.href="./";
 	};
 
 	return (
@@ -43,12 +43,12 @@ const myDocs = () => {
 <section className={styles.main}>
 <br />
 
-<div className="box">
-  <h2 className="header">
+<div className={styles.box}>
+  <h2 className={styles.header}>
     Drop your files below to add:
   </h2>
 
-  <div className="dropBox">
+  <div className={styles.dropBox}>
   <DropFileInput
   onFileChange={(files) => onFileChange(files)}
   />
@@ -58,7 +58,6 @@ const myDocs = () => {
 <br />
 <br />
 <h2>Your Files:</h2>
-<br />
 <br />
 <br />
 <br />
@@ -79,16 +78,27 @@ const myDocs = () => {
         <a href='/'><img src="./Niftron_logo.png" height={75} width={200} alt="Logo" /></a>
         <br />
         <br />
-        <div className='icons' align="center">
+        <div className={styles.icons} align="center">
         <br />
         <a href='/'><img src="./instaicon.png" height={50} width={50} alt="insta" /></a>
         <a href='https://github.com/Niftron'><img src="./giticon.png" height={50} width={50} alt="git" /></a>
         <a href='/'><img src="./linkedinicon.png" height={50} width={50} alt="linkedIn" /></a>
 
          </div>
-          <section className={styles.footer_info_terms}>
+         <section className={styles.footer_info_terms}>
             <br />
-            <p><a href='/'>Info</a>  -  <a href='/'>Support </a>  -  <a href='/'>Marketting </a></p>
+            
+        <table>
+        <tr>
+            <td><a href='/'>Info</a></td>
+            <td>-</td>
+            <td><a href='/'>Support </a></td>
+              <td>-</td>
+            <td><a href='/'>Marketting </a></td>
+              <td></td>
+        </tr>
+        </table>
+            
           </section>
           <section className={styles.footer_info_email}>
             <br />
