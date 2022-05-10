@@ -111,8 +111,8 @@ const Login = () => {
         <a href='/'><img src="./linkedinicon.png" height={50} width={50} alt="linkedIn" /></a>
 
          </div>
-		 <section className={styles.footer_info_terms}>
-        <table>
+		 <section className={styles.footer_info_terms} align="center">
+        <table align="center">
         <tr>
             <td><a href='/'>Info</a></td>
             <td>-</td>

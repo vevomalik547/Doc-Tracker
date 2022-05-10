@@ -52,6 +52,12 @@ function MyDocs() {
 				<img src="/Niftron_logo.png" width="20%" alt="Logo" />
 				</Link>
 				
+        <Link to="/">
+						<button type="button" className={styles.header_btn}>
+							Home
+						</button>
+					</Link>
+
         <Link to="/myDocs">
 						<button type="button" className={styles.header_btn} style={{color: "lightblue"}}>
 							My Docs
@@ -79,8 +85,9 @@ function MyDocs() {
 
         <div className={styles.box}>
           <h2 className={styles.header}>
-            Drop your files below to add:
+            Drop your file below to add:
           </h2>
+          <h6>Note: You can upload only one file at a time</h6>
 
           <div className={styles.dropBox}>
             <DropFileInput
@@ -91,7 +98,7 @@ function MyDocs() {
 
         <br />
         <br />
-        <h2>Your Files:</h2>
+        <h2>My Files:</h2>
         {
           fileList.length > 0 &&
           fileList.map((item, index) => (
@@ -117,58 +124,64 @@ function MyDocs() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </section>
-      <section className={styles.footer}>
-        <br />
-        <section className={styles.footer_info}>
-          <section className={styles.footer_info_left}>
 
-          </section>
-          <section className={styles.footer_info_center}>
-            <a href='/'><img src="./Niftron_logo.png" height={75} width={200} alt="Logo" /></a>
+</section>
+<section className={styles.footer}>
+      <br />
+      <section className={styles.footer_info}>
+        <section className={styles.footer_info_left}>
+            
+        </section>
+
+        <section className={styles.footer_info_center}>
+        <a href='/'><img src="./Niftron_logo.png" height={75} width={200} alt="Logo" /></a>
+        <section className='icons' align="center">
+        <table align="center">
+        <tr>
+            <td>
+              <a href='/'><img src="./instaicon.png" height={35} width={35} alt="insta" /></a></td>
+              <td>
+              <a href='https://github.com/Niftron'><img src="./giticon.png" height={35} width={35} alt="git" /></a></td>
+            <td>
+              <a href='/'><img src="./linkedinicon.png" height={35} width={35} alt="linkedIn" /></a></td>
+              <td></td>
+        </tr>
+        </table>
+         </section>
+
+          <section className={styles.footer_info_terms}>
             <br />
             <br />
-            <div className={styles.icons} align="center">
-              <br />
-              <a href='/'><img src="./instaicon.png" height={50} width={50} alt="insta" /></a>
-              <a href='https://github.com/Niftron'><img src="./giticon.png" height={50} width={50} alt="git" /></a>
-              <a href='/'><img src="./linkedinicon.png" height={50} width={50} alt="linkedIn" /></a>
-
-            </div>
-            <section className={styles.footer_info_terms}>
-              <br />
-
-              <table>
-                <tr>
-                  <td><a href='/'>Info</a></td>
-                  <td>-</td>
-                  <td><a href='/'>Support </a></td>
-                  <td>-</td>
-                  <td><a href='/'>Marketting </a></td>
-                  <td></td>
-                </tr>
-              </table>
-
-            </section>
-            <section className={styles.footer_info_email}>
-              <br />
-              © 2022 Niftron
-            </section>
+        <table align="center">
+        <tr>
+            <td><a href='/'>Info</a></td>
+            <td>-</td>
+            <td><a href='/'>Support </a></td>
+              <td>-</td>
+            <td><a href='/'>Marketting </a></td>
+              <td></td>
+        </tr>
+        </table>
+            
           </section>
-          <section className={styles.footer_info_right}>
-            <section className={styles.footer_info_contact}>
-              <br />
-            </section>
+          <section className={styles.footer_info_email}>
+            <br />
+            <table align="center">
+        <tr>
+            <td>Powered by Niftron</td>
+        </tr>
+        </table>
+          </section>
+        </section>
+        <section className={styles.footer_info_right}>
+          <section className={styles.footer_info_contact}>
+            <br />
           </section>
         </section>
       </section>
-    </div>
-  );
+    </section>
+</div>
+	);
 }
 
 

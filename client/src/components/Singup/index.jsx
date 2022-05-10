@@ -173,7 +173,7 @@ const Signup = () => {
          </div>
 
 		 <section className={styles.footer_info_terms}>            
-        <table>
+        <table align="center">
 		<tr>
             <td><a href='/'>Info</a></td>
             <td>-</td>

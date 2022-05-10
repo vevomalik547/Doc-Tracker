@@ -21,6 +21,12 @@ const Main = () => {
 				<img src="/Niftron_logo.png" width="20%" alt="Logo" />
 				</Link>
 				
+        <Link to="/">
+						<button type="button" className={styles.header_btn} style={{color: "lightblue"}}>
+							Home
+						</button>
+					</Link>
+
         <Link to="/myDocs">
 						<button type="button" className={styles.header_btn}>
 							My Docs
@@ -53,11 +59,11 @@ const Main = () => {
       <p className={styles.home_item_top}> Create, Manage & Boost Your Business 
       <br />
 	  <br />
-	  <p className={styles.content}>DocFlow is blockchain-based document management software that digitizes the entire paperwork cycle and uses advanced smart contract mechanisms to guarantee uncompromised data security and authenticity. A lightbulb moment for your paperwork.</p>
+	  <p className={styles.content}>Doc-Tracker is blockchain-based document management software that digitizes the entire paperwork cycle and uses advanced smart contract mechanisms to guarantee uncompromised data security and authenticity. A lightbulb moment for your paperwork.</p>
       <p className={styles.content}>&nbsp;</p>
-      <a href="/" className={styles.home_item_top}>
-		  <button className={styles.btn}>Get Started</button>
-		  </a>
+      <Link to="/myDocs" className={styles.home_item_top}>
+		  <button className={styles.btn}>Upload Files Now</button>
+		  </Link>
       </p>
     </section>
 <br />
@@ -155,18 +161,15 @@ const Main = () => {
 
         <section className={styles.footer_info_center}>
         <a href='/'><img src="./Niftron_logo.png" height={75} width={200} alt="Logo" /></a>
-        <br />
-        <br />
         <section className='icons' align="center">
-        <br />
-        <table>
+        <table align="center">
         <tr>
             <td>
-              <a href='/'><img src="./instaicon.png" height={50} width={50} alt="insta" /></a></td>
+              <a href='/'><img src="./instaicon.png" height={35} width={35} alt="insta" /></a></td>
               <td>
-              <a href='https://github.com/Niftron'><img src="./giticon.png" height={50} width={50} alt="git" /></a></td>
+              <a href='https://github.com/Niftron'><img src="./giticon.png" height={35} width={35} alt="git" /></a></td>
             <td>
-              <a href='/'><img src="./linkedinicon.png" height={50} width={50} alt="linkedIn" /></a></td>
+              <a href='/'><img src="./linkedinicon.png" height={35} width={35} alt="linkedIn" /></a></td>
               <td></td>
         </tr>
         </table>
@@ -174,8 +177,8 @@ const Main = () => {
 
           <section className={styles.footer_info_terms}>
             <br />
-            
-        <table>
+            <br />
+        <table align="center">
         <tr>
             <td><a href='/'>Info</a></td>
             <td>-</td>
@@ -189,9 +192,9 @@ const Main = () => {
           </section>
           <section className={styles.footer_info_email}>
             <br />
-            <table>
+            <table align="center">
         <tr>
-            <td>Powered by <a className={styles.footer_info_email} href='/'><img src="./shortcutIcon.png" alt="logo" /></a></td>
+            <td>Powered by Niftron</td>
         </tr>
         </table>
           </section>

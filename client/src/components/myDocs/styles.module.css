@@ -283,8 +283,31 @@ body {
 .details__btn {
   width: 20%;
   height: 40px;
-  border-color: white;
-  background-color: rgba(5, 76, 168, 0.596);
+  border-color: #04316d;
+  background-color: #04316d;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.452);
+}
+
+.details__btn:hover {
+transform: translateX(10px);
+color: white;
+background-color: #04316d;
+transition: 0.6s ease-in-out;
+}
+
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track{
+	background: #00cc99;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #0475f7;
+	border-radius: 50px;
 }

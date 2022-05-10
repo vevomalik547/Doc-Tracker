@@ -3,15 +3,15 @@
 # 2115421_Doc-Tracker
 #
 # ***********************************YOU SHOULD HAVE NODE.JS INSTALLED******************************************************
-# *															                                                              																					
-# *			NodeJS Download URL : https://nodejs.org/en/download/					                                    	   
-# *															                                                    
+# *															   *																					
+# *			NodeJS Download URL : https://nodejs.org/en/download/						   *
+# *															   *
 # **************************************************************************************************************************
 #
-# ***************RUN THE BACKEND BEFORE RUNNING CLIENT*****************
+#***************RUN THE BACKEND BEFORE RUNNING CLIENT*****************
 #
 #
-# RUN THE FOLLOWING COMMANDS IN THE TERMINAL ACCORDING TO THE INSTRUCTIONS GIVEN BELOW:
+#RUN THE FOLLOWING COMMANDS IN THE TERMINAL ACCORDING TO THE INSTRUCTIONS GIVEN BELOW:
 #
 #
 # Install npm package in '/client' using the command : "npm i"
